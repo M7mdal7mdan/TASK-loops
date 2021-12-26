@@ -9,7 +9,13 @@
   # 
  */
 function drawVLine(n) {
-  // Continue the code here
+  for (let i = 0; i < 5; i++) {
+   console.log("#")
+    
+  }
+  drawHLine(5);
+  
+
 }
 /**
  *
@@ -18,7 +24,16 @@ function drawVLine(n) {
  */
 function drawHLine(n) {
   // Continue the code here
+  for (let i=0; i<n; i++){
+    Process.stdout.write("#");
+  }
+  console.log();
+
+
 }
+
+drawHLine();
+
 
 /**
  * 
@@ -34,8 +49,14 @@ function drawHLine(n) {
  */
 function drawSquare(n) {
   // Continue the code here
+  for (let j= 0 ; k<n;j++){
+  for(let i = i; i<n;i++){
+    Process.stdout.write("#");
+  }
+  console.log();
 }
-
+}
+drawSquare(5);
 /**
  * 
  * In this function, you will have to draw a triangle with a length of `n` 
@@ -48,10 +69,16 @@ function drawSquare(n) {
   #  #  #  #  #
 
  */
-function drawLeftTriangle(n) {
-  // Continue the code here
-}
-
+  function drawLeftTriangle(n) {
+    // Continue the code here
+   for (let i =0; i<n;i++){
+    for (let j =0; j<=i;j++){
+  process.stdout.write("# ");
+    }
+  console.log()
+   }
+  }
+  drawLeftTriangle(5);
 /**
  * 
  * In this function, you will have to draw a tree with a length of `n` 
@@ -66,7 +93,25 @@ function drawLeftTriangle(n) {
  */
 function drawTree(n) {
   // Continue the code here
+  //row
+  for (let i =0; i<n;i++){
+    //space
+    for(let s=n -1;s>= i;s--)
+    {
+      process.stdout.write("# ");
+      //column
+      for (let j =0; j<i;j++)
+      { 
+process.stdout.write("# ");
+   }
+   console.log("");
+   }
+   for (let jo=0; o<n;o++)
+   { 
+process.stdout.write("# ");
 }
+}
+drawTree(5)
 /**
  *
  * In this example, you will create 4 arrays, `yellowCards`, `greenCards`, `redCards`, `blueCards`
@@ -78,4 +123,14 @@ function fillUnoDeck() {
   let redCards = [];
   let blueCards = [];
   // Fill the cards here
+  for (let i = 0; i<10; i++){
+    for (let j = 0; j<2;j++){
+greenCards.push(i);
+yellowCards.push(i);
+redCards.push(i);
+blueCards.push(i);
+    }
+console.log();
+  }
+}
 }
