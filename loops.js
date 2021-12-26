@@ -13,10 +13,9 @@ function drawVLine(n) {
    console.log("#")
     
   }
-  drawHLine(5);
-  
-
+ 
 }
+drawHLine(5);
 /**
  *
  * In this function, you will have to draw a horizontal line with `n` length
